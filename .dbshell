@@ -1,0 +1,142 @@
+show dbs
+use the-glam-plug-local
+show dbs
+use the-glam-plug-local
+show dbs
+use the-glam-plug-local
+db.users.insert({"profile": {"firstname": "Alan","lastName": "dev","email": "alan@gmail.com","mobile": "9999999"},"userName": "alan","salon":{"salonName":"Alan Salon","salonAddress":"New York","instagramName":"Alan"}, "pricePoints":"10", password": "$2a$05$YgbyuswEKnsjTE4dEWZk7uNKtP5kaLaBZzUO6HFFYsU0fEQE4mGsW","hairstyleServices": ["Natural curly"],"hairType": ["Cornrows"],"startTime":"10AM","endTime":"09PM","role":["STYLIST"],"freeLancer":"No","isActive":"true", "preferredHairStyle":["Natural curly"], "preferredHairStyle":["Cornrows"],"status":10})
+show dbs
+use the-glam-plug-local
+db.users.insert({"profile": {"firstname": "Alan","lastName": "dev","email": "alan@gmail.com","mobile": "9999999"},"userName": "alan","salon":{"salonName":"Alan Salon","salonAddress":"New York","instagramName":"Alan"}, "pricePoints":"10", password": "$2a$05$YgbyuswEKnsjTE4dEWZk7uNKtP5kaLaBZzUO6HFFYsU0fEQE4mGsW","hairstyleServices": ["Natural curly"],"hairType":["Cornrows"],"startTime":"10AM","endTime":"09PM","role":["STYLIST"],"freeLancer":"No","isActive":"true", "preferredHairStyle":["Natural curly"], "preferredHairStyle":["Cornrows"],"status":10})
+db.users.insert({"profile": {"firstname": "Alan","lastName": "dev","email": "alan@gmail.com","mobile": "9999999"},"userName": "alan","salon":{"salonName":"Alan Salon","salonAddress":"New York","instagramName":"Alan"}, "pricePoints":"10", "password": "$2a$05$YgbyuswEKnsjTE4dEWZk7uNKtP5kaLaBZzUO6HFFYsU0fEQE4mGsW","hairstyleServices": ["Natural curly"],"hairType":["Cornrows"],"startTime":"10AM","endTime":"09PM","role":["STYLIST"],"freeLancer":"No","isActive":"true", "preferredHairStyle":["Natural curly"], "preferredHairStyle":["Cornrows"],"status":10})
+show collections
+show dbs
+use the-glam-plug-local
+show collections
+db.users.find()
+use the-glam-plug-local
+db.users.remove()
+db.users.removeOne("_id":"5f31a758d3532079e19a2496")
+db.users.removeOne({"_id":"5f31a758d3532079e19a2496"})
+db.users.remove({"_id":"5f31a758d3532079e19a2496"})
+db.users.find()
+db.users.remove({})
+db.users.find()
+db.users.insert({"profile": {"firstname": "Alan","lastName": "dev","email": "alan@gmail.com","mobile": "9999999"},"userName": "alan","salon":{"salonName":"Alan Salon","salonAddress":"New York","instagramName":"Alan"}, "pricePoints":"10", "password": "$2a$05$YgbyuswEKnsjTE4dEWZk7uNKtP5kaLaBZzUO6HFFYsU0fEQE4mGsW","hairstyleServices": ["Natural curly"],"hairType":["Cornrows"],"startTime":"10AM","endTime":"09PM","role":["STYLIST"],"freeLancer":"No","isActive":"true", "preferredHairStyle":["Natural curly"], "preferredHairType":["Cornrows"],"status":10})
+db.users.find()
+db.salons.insert({"salonName":"Alan Salon", "rating": 4.5, "description": "This is jawed habib salon", "firstName": "Alan", "lastName": "Habib", "mobile": "9999999", "email": "alan@gmail.com", "userId":ObjectId("5f31a92f597a49884e712bff"), "userName": "alan", "salonAddress": "New York", "startTime": "09:00", "endTime": "09:00", "hairstyleServices": ["Cornrows"], "hairType": ["Natural Curly hair"], "pricePoints": 5, "isActive": true})
+db.salons.find()
+db.users.update({"_id":"5f31a92f597a49884e712bff"},{$set:{"salonId":["5f31ab31597a49884e712c00"]}})
+db.users.update({"_id":ObjectId("5f31a92f597a49884e712bff")},{$set:{"salonId":["5f31ab31597a49884e712c00"]}})
+db.users.find()
+db.salons.find()
+show dbs
+use th-glam-plug-local
+show dbs
+use the-glam-plug-local
+show collections
+show dbs
+use the-glam-plug-local
+show collections
+db.servicebookings()
+db.servicebookings.find({})
+show collections
+db.salon.find()
+db.salons.find()
+db.salonservices.find()
+show collections
+db.salonservices.find()
+show dbs
+use the-glam-plug-local
+show collections
+db.servicebookings.find()
+sb.salonservices.find()
+db.salonservices.find()
+use the-glam-plug-local
+show collections
+use the-glam-plug-local
+show collections
+db.subscriptionpayments.find()
+use the-glam-plug-local
+show collections
+db.subscriptionpayments.find()
+use the-glam-plug-local
+show collections
+db.subscriptionpayments.find()
+db.subscriptionpayments.remove({})
+db.subscriptionpayments.find()
+use the-glam-plug-local
+show collections
+db.subscriptionpayments.find()
+db.subscriptionpayments.remove({})
+db.subscriptionpayments.find()
+use the-glam-plug-local
+show collections
+db.landingpageemails.find()
+use the-glam-plug-local
+show collections
+db.landingpageemails.find()
+use the-glam-plug-local
+show collections
+db.subscriptionpayments.find()
+use the-glam-plug-local
+db.collections
+show.collections
+show collections
+db.salons.find({})
+db.salons.remove({favoriteUserId:[ObjectId("5f31a92f597a49884e712bff")]})
+db.salons.find({})
+db.salons.remove({favoriteUserId:[{ObjectId("5f31a92f597a49884e712bff")}]})
+db.salons.remove({favoriteUserId})
+db.salons.update({$pull: {favoriteUserId}})
+db.salons.update({$pull: {favoriteUserId:{0:ObjectId("5f31a92f597a49884e712bff")}}})
+use the-glam-plug-local
+show collections
+db.favoritesalons.find({})
+use the-glam-plug-local
+show collections
+db.users.find({})
+db.users.insert({"profile": {"firstname": "Manish","lastName": "kumar","email": "manish@gmail.com","mobile": "9999999"},"userName": "manish", "password": "$2a$05$YgbyuswEKnsjTE4dEWZk7uNKtP5kaLaBZzUO6HFFYsU0fEQE4mGsW", "role":["USER"],"freeLancer":"No","isActive":"true", "preferredHairStyle":["Natural curly"], "preferredHairType":["Cornrows"],"status":10})
+use the-glam-plug-local
+show collections
+db.servicebookings.find({})
+db.servicebookings.find({}).count()
+db.servicebookings.remove({})
+db.servicebookings.find({}).count()
+db.servicebookings.find({})
+use the-glam-plug-local
+show collections
+db.salons.find({})
+use the-glam-plug-local
+show collections
+db.servicebookings.remove({})
+db.servicebookings.find({})
+show dbs
+use the-glam-plug-local
+show collections
+db.salons.remove({})
+db.users.remove({})
+db.servicebookings.remove({})
+db.subscriptionpayments.remove({})
+db.newratings.remove({})
+db.subscriptionpayments.find({})
+db.salons.find({})
+use the-glam-plug-local
+db.subscriptionpayments.remove({})
+use the-glam-plug-local
+show collections
+db.users.find({})
+show dbs
+use the-glam-plug-local
+show collections
+db.salons.find({})
+db.salons.aggregate([$unset: ["availablity"]])
+db.salons.aggregate([{$unset: ["availablity"]}])
+db.salons.update({availablity: {$exists: true}}, {$unset: {availablity: 1}},false, true)
+show dbs
+use the-glam-plug-local
+show collections
+db.salons.find({})
+show dbs
+use the-glam-plug-local
+show collections
